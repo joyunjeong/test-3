@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>응접실다방</title>
+ <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+ 
+  <style>
+    body {
+      font-family: "Pretendard Variable", sans-serif;
+      line-height : 28px;
+      max-width: 1280px
+      
+      
+    }
+      
+    #header-box {
+      
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 300;
+      background: #ffe266;
+      padding: 0px 45px;
+      max-width: 1280px;
+      margin: 0px 0px 65px 0px;
+      font-size: 10pt;
+      font-weight: bold;
+      
+      
+    }
+    }
+    .container1 {
+      border: 1px solid black;
+      max-width: 1280px;
+     font-size: 12pt;
+      
+
+    }
+    
+    .header {
+      max-width: 1280px;
+      text-align: center;
+      margin: 0px 0px 77px 0px;
+     
+    }
+    img {
+      width: 100%;
+      max-width: 800px;
+      
+     
+    }
+     .container2 {
+    
+      background: white;
+      
+      border: 2px solid lightgray
+      
+  
+      
+    }
+    .columns {
+      display: grid;
+      grid-template-columns: 1fr 2fr; 
+      align-items: flex-start; 
+      
+    }
+    
+      .left-content-column {
+      display: flex;
+      flex-direction: column; /* 내부 요소들을 세로로 쌓습니다. */
+      gap: 30px; /* 내부 요소들 사이의 간격 */
+      font-weight: bold;
+      font-size: 12pt;
+      
+    }
+      
+    
+    .column1 {
+      position: relative;
+      width: 370px;
+      display: flex;
+      flex-directon: column;
+      justify-content: left;
+      align-items: center;
+      font-weight: bold; 
+      font-size: 12pt;
+      margin: 0px 33px 0px 45px;
+      flex-direction: column;
+      gap: 8px;
+}
+    
+    .column1 img {
+      width: 370px; 
+    }
+    
+    
+    #interview {
+      text-align: left;
+      background-color: #ffe266;
+      padding: 15px;
+      border-radius: 25px;
+      margin: 0px 0px 40px 0px;
+      text-align: center;
+      
+     
+    }
+    
+    #interview img {
+      width: 300px;
+      padding: 20px 0px 0px 0px;
+      
+    }
+    
+    #interview p {
+      padding: 0px 15px;
+      font-size: 12pt;
+      text-align: left;
+    }
+    
+    
+    
+  
+    
+      .column2 {
+      display: grid;
+      girdjustify-content: flex-end;
+      grid-template-columns: 244px 244px 244px ;
+      grid-template-rows: 512px 270px 211px 330px;
+      gap: 30px 20px;
+      font-weight: bold; 
+      font-size: 12pt;
+      
+            
+    }
+    
+    
+    a {
+      text-decoration: none;
+      color: inherit;
+        }
+    a:hover {
+      color: white;
+    }
+    
+    .item1 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      width: 774px;
+      
+    }
+    
+     .item2 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      
+      
+      
+    }
+    
+    .item2 img {
+      width: 238px;
+      
+    }
+    
+     .item3 {
+      grid-row-start: 2;
+      grid-column-start: 3;
+    }
+     .item3 img {
+      width: 242px;
+      
+    }
+    
+   
+    
+    .item4 {
+      grid-row-start: 2;
+      
+    }
+    
+    .item5 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 4;
+      width: 508px;
+    }
+    
+    
+     .item6 {
+   grid-column: 1;
+   grid-row-start: 4;
+    }
+    
+   
+   
+
+    
+    
+    
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      background: #ffe266;
+      padding: 0px 45px;
+      max-width: 1280px;
+      font-size: 10pt;
+      font-weight: bold;
+          }
+    
+    @media (max-width: 740px) {
+  .container {
+    width: 100%;
+    grid-template-areas: 
+      "header"
+      "body"
+      "footer";
+    grid-template-columns: 3fr;
+  }
+   
+    
+    
+    
+    
+  </style>
+</head>
+<body>
+ 
+  <div class="container1">
+     <div class="container2">
+     <div class="header">
+       <div id="header-box">
+        <div class="header-left"> <a href="#link1">외부 및 내부 모습</a></div>
+        <div class="header-center"><a href="#link2">탐방다방</a></div>
+        <div class="header-right"> <a href="#link3">사장님과의 인터뷰</a></div>
+       </div>
+    <img src= "https://i.imgur.com/G2duIlN.png" alt="1">
+      
+  </div>
+    <div class="columns">
+      <div class="column1">
+      
+        <img src= "https://i.imgur.com/i9eTua3.png" alt="2">
+         <p>입구를 보면 주황색 차양 아래 간판이 있다. 
+        ‘응접실’은 검은색이고 ‘다방’은 빨간색과 검은색으로 강조되어있다. 
+           
+         </p>
+      <div id="interview">
+        <h2 id="link3">사장님과의 인터뷰</h2>
+        <img src="https://i.imgur.com/7EJn2ZR.png" alt="3">
+       <p>
+           "사장님. 다방 이름은 누가 지으신 거예요?"
+        </p>
+        
+        <p> ⛾  "그전에 있던 거예요. 그대로 인수받아서."</p>
+
+        <p> "그러면 그전에 사장님이 28년, 그전에… 완전 옛날부터 있었던 거네요."</p>
+
+        <p>⛾  "네. 그전에는 여기가 저기 찻집이었었어요."</p>
+
+        <p> "찻집이랑 다방이랑 달라요?" </p>
+
+        <p>⛾  "틀리지 찻집은 술 같은 거를 팔 수 있고, 배달은 밖으로 나갈 수가 없지."</p>
+
+        <p>"신기하네"</p>
+
+        <p>⛾  "그러니까 이런 거를 안 해보는 사람들은 그걸 이해를 못하죠.
+        찻집이 되는 거는 이 차를 팔게만 돼 있지 외부로는 못 나가게 돼 있어, 
+        술 같은 거는 안에서 또 팔 수도 있고.
+        그런데 이제 커피나 다방이나 이 커피숍 같은 데는 밖으로 나갈 수가 있고."
+       </p>
+
+      </div>
+      
+      
+     </div>
+      <div class="column2">
+        <div class="item1", id="link1">
+         <img src= "https://i.imgur.com/8SwrMnm.png" alt="4">
+        </div>
+      <div class="item2"> <img src= "https://i.imgur.com/bRbQ0C7.png" alt=5>
+        
+      <p>
+        다방으로 들어서면 유리문이 보인다.
+         유리문 표면에 시원한 느낌의 옥색 선팅지가 붙어 있다. 반복적인 기하학적무늬가 시야를 걸러주는 동시에 장식적인 효과를 준다.
+         금속과의 조합이 세련되고 원형 손잡이가 매력적이다. 주방 안쪽은 커튼으로 깔끔하게 가렸다.
+         
+        </p>
+        </div>
+         <div class="item3"> <img src="https://i.imgur.com/wdMwrCE.png" alt=5>
+         <p>
+         30년 조리한 조리 도구들이 너무 깨끗해서 놀라울 정도다. 금전 출납기와 메모장이 같이 놓여있다.
+         천장과 벽은 같은 벽지로 마무리했고 다락 문짝에도 벽지를 발랐다. 소박한 한옥집 벽장이 연상된다.
+        </p>
+        </div>
+        
+         <div class="item4">
+        "여기는 사무실이 아니라 수도들이 없어. 길가 쪽에는 수도가 있는데. 화장실들도 없잖아.
+        공장 지대니까 손작업이 많아서 손님 오면 그냥 배달시키기도 하고.
+        공장 지대가 여기밖에 없는 거지, 지금. 여기 없어지면 이제 없어. 다 뭉쳐 있어야 되거든.
+        뭐를 하나 사면은 여기서 이거저거 작업이 다 되는 거지.
+        여기는 모든게 몇 번 왔다 갔다 하면 완제품이 돼버리잖아. 여기 오면 안 되는 게 없거든."
+        2023년 5월, 마지막 장사 날이라 하셔서 들렀다.
+        처음 들어올 때부터 재개발될 거라고 했는데 그게 벌써 30년이 넘었다.
+        가게 안에서 보상금 이야기가 한창이었고 밖에는 철거 팀이 가판을 떼고 있었다.
+        곧 가림막이 설치될 것 같았다. 요란하고 신기하고 멋진 골목이었다.
+        온갖 신들이 있을 것만 같은.
+         
+         
+        </p>
+      </div>
+        
+        <div class="item5"> <img src= "https://i.imgur.com/9P7tpxn.png">
+          <P> 알루미늄 액자 속의 가격표. 가격을 올릴 때마다 조금씩 고치다가 그만두었다.
+          흰 바탕에 검은 글씨를 보고 있자니 수묵화를 볼 때의 차분함이 느껴져서 조금 신기했다.
+          </P>
+        </div>
+        
+        <div class="item6"> <img src= "https://i.imgur.com/UJoUnMK.png"> <img src= "https://i.imgur.com/NsBZbEA.png">
+           <P>
+          테이블은 밝은 색상이고 대리석 무늬가 있다. 꽃 그림이 있는 하얀 찻잔과 받침이 고전적인 느낌을 주는 데 비해 설탕 통은 단순한 디자인이 현대적이다.
+           </P>
+        </div>
+        
+        
+          
+        </div>
+      
+     
+     </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <div class="footer-left"><a href= "https://naver.me/5AgOugKy" target="_blank"> 위치: 서울 중구 을지로 3가</a></div>
+    <div class="footer-left"> 전화: 2266-1022</div>
+  </footer>
+</body>
+</html>
