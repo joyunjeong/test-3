@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+<title>탐방다방 이하린 페이지</title>
+  <style>
+#wrap {
+    width: 1280px;
+    margin: 61px 75px 0px 75px;
+}
+    
+#banner{
+    width: 171px;
+    float: left;
+    margin-left: 0px;
+    font-family: "Noto Sans KR", sans-serif;
+    font-weight: 700;
+    position: fixed;
+}
+    #banner p {
+    width: 170px;
+    line-height: 1.5;
+    margin-top: 20px;
+    font-size: 12px;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+    #main {
+      font-family: "Noto Sans KR", sans-serif;
+    }
+ul {
+    font-size: 24px;
+    margin-left: -20px;
+    margin-bottom: 70px;
+    line-height: 1.5;
+}
+    ul li a {
+    text-decoration: none;
+      color: inherit
+    }
+li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+/* 웹킷 브라우저 (크롬, 사파리) 스크롤바 숨기기 */
+p::-webkit-scrollbar {
+    display: none;
+}
+
+#main {
+    width: 823px;
+    float: left;
+    margin-left: 500px; /* banner width (171px) + margin-left (50px) + main's margin-left (여유 공간) */
+    padding: 0px 0px 100px 0px;
+    /* margin-left: 500px; 는 화면 크기가 작아지면 레이아웃이 깨질 수 있으니 반응형 고려 필요 */
+}
+
+/* 이미지 호버 효과 */
+.gallery-grid { /* 기존 .image-wrapper 역할 */
+    display: flex; /* flex-wrap이므로 grid 대신 flex 유지 */
+    flex-wrap: wrap;
+    gap: 15px; /* 이미지 컨테이너 사이 간격 */
+    width: 100%;
+}
+.image-container {
+    position: relative; /* 오버레이가 이 컨테이너를 기준으로 배치되도록 */
+    width: 261px; /* 각 이미지의 너비 */
+    height: 120px; /* 261px 너비에 맞는 3:2 비율 높이 (261 * 2 / 3 = 174) */
+    overflow: hidden; /* 오버레이가 컨테이너를 벗어나지 않도록 */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: rgba(0, 0, 0, 0.65); /* 검은색 불투명도 박스 (불투명도 조절) */
+    display: flex;
+    flex-direction: column; /* 텍스트를 세로로 정렬 */
+    justify-content: center; /* 수직 중앙 정렬 */
+    opacity: 0; /* 초기에는 투명하게 (보이지 않게) */
+    text-align: left; /* 텍스트 정렬 */
+    padding: 10px; /* 패딩 추가 */
+    box-sizing: border-box; /* 패딩이 너비/높이에 포함되도록 */
+}
+.overlay-text {
+    color: white;
+    font-size: 14px; /* 텍스트 크기 조절 */
+    font-weight: bold;
+    margin: 0;
+    line-height: 1.2;
+}
+
+/* 마우스를 올렸을 때 오버레이를 보이게 함 */
+.image-container:hover .overlay {
+    opacity: 1;
+    pointer-events: auto; /* 마우스를 올렸을 때 오버레이가 이벤트에 반응하도록 */
+}
+
+footer {
+    clear: both; /* float 해제 */
+  width: 100%;
+  height: 209px;
+  position: relative;
+  padding-top: 15px;
+  color: #Ffff;
+  font-size: 11px;
+  margin-top: auto; 
+  background-color: #000000;
+  bottom : 0;
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+  line-height: -30;
+}
+
+  </style>
+</head>
+<body>
+ <div id="wrap">
+ 
+  <div id="banner">
+   <img src="https://i.imgur.com/RfOmCB6.png" width="165" height="170">
+   <ul>
+        <li><a href="https://harin224.github.io/-/">이름과 다방</a></li>
+        <li><a href="">찻잔</a></li>
+   </ul>
+   <p>
+    다방 이름과 간판은 공간의 정체성과 분위기를 가늠케 하는 중요한 요소다.
+    다방의 이름은 크게 네 가지로 분류할 수 있다. 지리적 위치와 연관된 이름, 권위와 위엄을 상징하는 이름, 감성적 경험을 떠올리게 하는 이름.
+    향수를 불러일으키는 이름이다.
+
+    빨강, 노랑, 파랑과 같은 색상은 상호를 돋보이게 하며 시선을 끄는 데 효과적이다. 대부분 한글로 구성되어 있고 영어는 'coffee' 정도의 단어만 사용되며 장식에 가깝다. 커피 잔이나 주전자 그림이 포함되기도 하는데
+    이는 다방의 주요 상품이 커피임을 시각적으로 나타내며, 고객에게 따뜻한 음료를 제공하는 장소라는 이미지를 전달한다. 흥미로운 점은 다방의 이름보다도 '다방'이라는 글자가 대개 더 강조된다는 것이다. 다시 말해 개별 브랜드보다는 다방 자체의 기능, 즉 다방이라는 업종의 명확한 식별이 더 중시되는 경향이 있다.
+    간판의 위치와 형태는 다방의 접근성을 결정짓는 데 중요하다.
+    일반적으로 다방 간판은 출입구 상단에 위치해 멀리서도 쉽게 인지할 수 있다.
+가로로 넓게 펼쳐진 형태라 보행자와 운전자의 시선을 쉽게 끌며 다방의 존재를 확실히 알린다. 좁은 거리나 골목길에 위치한 다방은 출입구 옆에 세로형 간판을 설치해 가시성을 높인다.
+이러한 간판은 공간이 제한된 경우에도 시각적 노출을 극대화하며 지나가는 행인의 시야에 닿고자 한다. 벽에서 돌출된 간판은 양방향에서 볼 수 있어 복잡한 상권이나 좁은 길에서 특히 효과적이다. 입간판은 길 위에 세워져 보행자의 동선과 맞닿으며 물리적으로 더 가까운 곳에서 다방의 존재감을 드러낸다.
+일부 다방은 가시성을 최대한 확보하기 위해 가로형, 세로형, 돌출형 간판과 입간판을 혼합 사용함으로써 다방의 존재를 여러 방향에서 강조하기도 한다.
+   </p>
+  </div>
+ 
+  <div id="main">
+   <div class="gallery-grid">  
+        
+        <div class="image-container">
+     <img src="https://i.imgur.com/SU6sHjR.jpeg">
+     <div class="overlay">
+      <p class="overlay-text">장원다방</p>
+     </div>
+    </div>
+
+    <div class="image-container">
+     <img src="https://i.imgur.com/DbFt0ZX.jpeg">
+     <div class="overlay">
+      <p class="overlay-text">진실다방</p>
+     </div>
+    </div>
+
+    <div class="image-container">
+     <img src="https://i.imgur.com/KyAjYnH.jpeg">
+     <div class="overlay">
+      <p class="overlay-text">늘봄다방</p>
+     </div>
+    </div>
+
+    <div class="image-container">
+     <img src="https://i.imgur.com/JaSeNRs.jpeg">
+     <div class="overlay">
+      <p class="overlay-text">강화다방</p>
+     </div>
+    </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/QDrARlM.jpeg">
+          <div class="overlay">
+            <p class="overlay-text">복음다방</p>
+          </div>
+        </div>
+
+        <div class="image-container">
+          <img src="https://i.imgur.com/5KIyz7G.jpeg">
+          <div class="overlay">
+            <p class="overlay-text">수정다방</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/p7PFkpP.jpeg[/img]">
+          <div class="overlay">
+            <p class="overlay-text">수다방</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/BEVuDJ6.jpeg">
+          <div class="overlay">
+            <p class="overlay-text">덕인커피숍</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/0hgHOyB.jpeg">
+          <div class="overlay">
+            <p class="overlay-text">성북다방</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/CecMZzO.jpeg[/img]">
+          <div class="overlay">
+            <p class="overlay-text">명다방</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/ejzm0Qp.jpeg">
+          <div class="overlay">
+            <p class="overlay-text">지하철다방</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/Xb7LzKM.jpeg">
+          <div class="overlay">
+            <p class="overlay-text">상록수커피숍</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/xzpTCQE.jpeg">
+          <div class="overlay">
+            <p class="overlay-text">정다방</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/vhMl5fy.jpeg">
+          <div class="overlay">
+            <p class="overlay-text">낙원다방</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/G62vVkF.jpeg">
+          <div class="overlay">
+            <p class="overlay-text">초원다방</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/O1UQpYL.jpeg">
+          <div class="overlay">
+            <p class="overlay-text">초원다방</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/46UsBUE.jpeg">
+          <div class="overlay">
+            <p class="overlay-text">금다방</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/V0cx6Tm.jpeg">
+          <div class="overlay">
+            <p class="overlay-text">다원다방</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/QjENgoM.jpeg">
+          <div class="overlay">
+            <p class="overlay-text">인천다방</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/0inteO7.jpeg">
+          <div class="overlay">
+            <p class="overlay-text">새롬다방</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/EWoKWrL.jpeg">
+          <div class="overlay">
+            <p class="overlay-text">미도커피숍</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/tCj5RPe.jpeg">
+          <div class="overlay">
+            <p class="overlay-text">란다방</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/C0Y5Jky.jpeg">
+          <div class="overlay">
+            <p class="overlay-text">동신다방</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/h0nBgsS.jpeg">
+          <div class="overlay">
+            <p class="overlay-text">원커피숍</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/0doQF2L.jpeg">
+          <div class="overlay">
+            <p class="overlay-text">태성다방</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/ONy1JaP.jpeg">
+          <div class="overlay">
+            <p class="overlay-text">지원다방</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/suZ3bf0.jpeg">
+          <div class="overlay">
+            <p class="overlay-text">나드리다방</p>
+          </div>
+        </div>
+        
+        <div class="image-container">
+          <img src="https://i.imgur.com/Kjf0ycc.jpeg">
+          <div class="overlay">
+            <p class="overlay-text">모아커피숍</p>
+          </div>
+        </div>
+        </div>
+  </div>
+   </div>
+ </div>
+    </div>
+<body>
+<footer>
+  <div id="footer">
+      <span>
+        <img src="https://i.imgur.com/RfOmCB6.png" width="50" height="50">
+        <p>계원예술대학교</p>
+        <p>디지털프로그래밍</p>
+        <p>3조</p>
+        <p>탐방다방</p>
+      </span>
+      </div>
+</footer>
+</html>
