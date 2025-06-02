@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>옥다방</title>
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <style>
+    body {
+      font-family: "Pretendard Variable", sans-serif;
+      line-height: 1.6;
+      color: #333;
+      padding: 20px;
+      margin: 0;
+    }
+
+    .box {
+      width: 1280px;
+      height: 48px;
+      margin: 0 auto;
+      background-color: #ff7f00;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 23px;
+      color: white;
+    }
+
+    .image-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 40px 0;
+    }
+
+    .image-box img {
+      width: 435px;
+      height: 158px;
+      object-fit: cover;
+    }
+
+    .box-with-margin {
+      width: 1200px;
+      margin: 40px auto;
+      background-color: #ff7f00;
+      padding: 20px;
+      font-size: 12pt;
+      color: white;
+      box-sizing: border-box;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 281px 286px 513px;
+      gap: 20px;
+    }
+
+    .left-img img {
+      width: 281px;
+      height: 405px;
+      object-fit: cover;
+    }
+
+    .body-text {
+      width: 286px;
+      height: 405px;
+      overflow-y: auto;
+      background-color: transparent;
+      color: white;
+      font-size: 14px;
+      line-height: 1.7;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .body-text::-webkit-scrollbar {
+      display: none;
+    }
+
+    .right-img img {
+      width: 550px;
+      height: 405px;
+      object-fit: cover;
+    }
+
+    .extra-layout {
+      display: grid;
+      grid-template-columns: 836px 252px;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .extra-image img {
+      width: 836px;
+      height: 405px;
+      object-fit: cover;
+      background-color: black;
+    }
+
+    .extra-text {
+      width: 252px;
+      height: 405px;
+      font-size: 14px;
+      line-height: 1.7;
+      overflow-y: auto;
+      color: white;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
+
+    .extra-text::-webkit-scrollbar {
+      display: none;
+    }
+
+    .third-layout {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .third-layout img {
+      width: 1200px;
+      height: 405px;
+      object-fit: cover;
+    }
+
+    .bottom-box {
+      width: 1280px;
+      height: 48px;
+      margin: 40px auto;
+      background-color: #ff7f00;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-size: 23px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+  <h4>외부 및 내부 모습</h4>
+  <a href="https://example.com/dabang" target="_blank" style="color:white; text-decoration: none;">
+    탐방다방
+  </a>
+  <h4>사장님과의 인터뷰</h4>
+</div>
+
+  <div class="image-box">
+    <img src="https://i.imgur.com/wSq3bWq.png" alt="중앙 이미지">
+  </div>
+
+  <div class="box-with-margin">
+    <h3>외부 및 내부 모습</h3>
+
+    <div class="layout">
+      <div class="left-img">
+        <img src="https://i.imgur.com/fCVKKPX.png" alt="옥다방 외부">
+      </div>
+      <div class="body-text">
+        <p>청록색과 흰색 바탕에 ‘옥다방’이 큼직하게 쓰여 있는 간판. ‘옥’색을 같은 계열인 청색으로 표현한 듯하다.</p>
+        <p>“나는 잘 모르고, 내가 한지는 한 30년 됐어.”<br>
+        “옛날에 카페, 레스토랑이었나봐 봐요.”<br>
+        “사장님 오실 때 인테리어를 하신 거예요?”<br>
+        “아니 안 했어요.”<br>
+        “저 유리 한 게 30년 넘은 것 같아요”<br>
+        “옥다방 이름도 사장민이 지으신 거예요?”<br>
+        “아니요, 그 전서부터 옥다방이었어요.”</p>
+        <p>언제부터 다방이었는지 물었더니 다방에 있던 언니들이 모두 흥미를 보였다. 하던 이야기를 중간에 끊고 끼어들기도 하면서 한마디씩 거들었다. 생각보다 제주도에는 다방이 많았고 같이 일하는 언니들도 꽤 있어서 잘 운영되고 있다는 인상을 받았다.</p>
+        <p>홀 중앙에는 칸막이 없이 둥근 테이블과 의자가 있다. 창가 좌석의 연한 옥색 목재 칸막이. 기둥이 천장까지 올라가 상부의 목제 프레임과 함께 공간을 구획한다. 하부의 시선 장식과 더불어 직선적인 부재들이 시원하고 명료한 느낌을 준다.</p>
+      </div>
+      <div class="right-img">
+        <img src="https://i.imgur.com/aeainS9.png" alt="옥다방 내부">
+      </div>
+    </div>
+
+    <div class="extra-layout">
+      <div class="extra-image">
+        <img src="https://i.imgur.com/iQei9XB.jpeg" alt="추가 이미지">
+      </div>
+      <div class="extra-text">
+        <p>제주시와 서귀포시 중심지에 국한된 것이기는 하지만 다방들이 대체로 활기가 있고 방문 성공률이 타 지역에 비해 높았다.</p>
+        <p>옥다방을 향하는 계단실을 꾸민 연한 옥색 목재와 짙은 갈색 바닥이 다방 내부까지 연결된다. 중앙 홀의 좌석들은 개방되어 있는데 갈색 바닥재 위에 유사한 통의 둥그란 의자와 테이블이 조합되어 있어 부드럽고 따듯한 느낌을 준다. 계산기 뒤편에 위치한 입구에 이상하지만 없으면 허전할 것 같은 박공지붕 형태의 목구조 장식이 있다. 계산대 위 늙은 호박에 화분을 올려둔 모습이 아주 인상적이다.</p>
+        <p>반면에 창가 좌석은 차가워 보이는 은은한 옥색의 칸막이로 나뉘어 있다. 칸막이 기둥이 천장까지 올라가 상부의 목제 프레임과 만나며 직선적인 구조물을 만든다. 칸막이 위에 끼워진 유리에는 에칭 기법으로 다양한 무늬가 아름답게 새겨져 있다. 각기 다른 곡선형 유리에 여러 형상을 표현한 것이 흥미로워 자세히 감상하게 된다. 큰 유리에는 역동적인 파도 위로 커다란 범선이 구름을 가르며 나아가는 그림이 있고, 작은 유리에는 파도와 구름이 제각각 다른 문양으로 새겨져 있다.</p>
+        <p>에칭으로 구름과 물결이 둥글둥글 새겨져 있다. 은은하게 빛나는 무늬들이 반투명한 면을 만들어 시선을 분리하면서 아늑한 공간을 만든다. 물잔에 새겨진 한자는 기쁨이 겹친다는 뜻의 쌍희(囍) 자다. 두 개를 나란히 붙인 형태로 행복과 기쁨이 두 배로 온다는 의미이다.</p>
+      </div>
+    </div>
+
+    <!-- 세 번째 줄: 단일 이미지 -->
+    <div class="third-layout">
+      <img src="https://i.imgur.com/w9zJ8bN.jpeg" alt="세 번째 줄 이미지">
+    </div>
+
+  </div>
+
+  <div class="bottom-box">
+    <h4>제주 제주시 이도1동</h4>
+    <h4>탐방다방</h4>
+    <h4>751-0400</h4>
+  </div>
+
+</body>
+</html>
