@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>백조커피숍</title>
+ <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+ 
+  <style>
+    body {
+      font-family: "Pretendard Variable", sans-serif;
+      line-height : 28px;
+      max-width: 1280px
+      
+      
+    }
+      
+    #header-box {
+      
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 300;
+      background: #272423;
+      padding: 0px 45px;
+      max-width: 1280px;
+      margin: 0px 0px 65px 0px;
+      font-size: 10pt;
+      font-weight: bold;
+      color: white;
+      
+    }
+    }
+    .container1 {
+      border: 1px solid black;
+      max-width: 1280px;
+     font-size: 12pt;
+      
+
+    }
+    
+    .header {
+      max-width: 1280px;
+      text-align: center;
+      margin: 0px 0px 77px 0px;
+     
+    }
+    img {
+      width: 100%;
+      max-width: 760px;
+      
+     
+    }
+     .container2 {
+    
+      background: white;
+      
+      border: 2px solid lightgray
+      
+  
+      
+    }
+    .columns {
+      display: grid;
+      grid-template-columns: 1fr 2fr; 
+      align-items: flex-start; 
+      
+    }
+    
+      .left-content-column {
+      display: flex;
+      flex-direction: column; /* 내부 요소들을 세로로 쌓습니다. */
+      gap: 30px; /* 내부 요소들 사이의 간격 */
+      font-weight: bold;
+      font-size: 12pt;
+      
+    }
+      
+    
+    .column1 {
+      position: relative;
+      width: 370px;
+      display: flex;
+      flex-directon: column;
+      justify-content: left;
+      align-items: center;
+      font-weight: bold; 
+      font-size: 12pt;
+      margin: 0px 33px 0px 45px;
+      flex-direction: column;
+      gap: 8px;
+}
+    
+    .column1 img {
+      width: 370px; 
+    }
+    
+    
+    #interview {
+      text-align: left;
+      background-color: #272423;
+      padding: 15px;
+      border-radius: 25px;
+      margin: 32px 0px 40px 0px;
+      text-align: center;
+       color: white;
+     
+    }
+    
+    #interview img {
+      width: 300px;
+      padding: 20px 0px 0px 0px;
+      
+    }
+    
+    #interview p {
+      padding: 0px 15px;
+      font-size: 12pt;
+      text-align: left;
+    }
+    
+  
+    
+      .column2 {
+      display: grid;
+      girdjustify-content: flex-end;
+      grid-template-columns: 240px 240px 240px ;
+      grid-template-rows: 512px 270px 211px 330px 330px;
+      gap: 30px 20px;
+      font-weight: bold; 
+      font-size: 12pt;
+      
+            
+    }
+    
+    
+    a {
+      text-decoration: none;
+      color: inherit;
+        }
+    a:hover {
+      color: #cbaf75 ;
+    }
+    
+    .item1 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      width: 820px;
+      
+    }
+    
+     
+    
+     .item2 {
+      grid-row-start: 2;
+      grid-column-start: 1;
+    }
+    .item2 img {
+      height: 352px;
+    }
+    
+    
+   
+    .item3 {
+      grid-row-start: 2;
+      grid-column-start: 2;
+      
+    }
+    
+    .item3 img {
+       height: 352px;
+    }
+    
+    .item4 {
+       grid-column-start: 3;
+      grid-row-start: 2;
+      
+    }
+    
+    .item5 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 4;
+      width: 508px;
+      
+    }
+    
+    
+     .item6 {
+   grid-column: 2;
+   grid-row-start: 5;
+    }
+    
+    .item6 img{
+      height: 152px;
+      
+    }
+    
+   
+    
+     .item7 {
+     grid-column: 3;
+    grid-row-start: 5;
+    }
+    
+    .item7 img{
+      height: 152px;
+      
+    }
+    
+    .item8 {
+    
+    grid-row-start: 4;
+    }
+    
+    
+    
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      background: #272423;
+      padding: 0px 45px;
+      max-width: 1280px;
+      font-size: 10pt;
+      font-weight: bold;
+      color: white;
+          }
+   
+    
+    
+    
+    
+  </style>
+</head>
+<body>
+ 
+  <div class="container1">
+     <div class="container2">
+     <div class="header">
+       <div id="header-box">
+        <div class="header-left"> <a href="#link1">외부 및 내부 모습</a></div>
+        <div class="header-center"><a href="index.html">탐방다방</a></div>
+        <div class="header-right"> <a href="#link3">사장님과의 인터뷰</a></div>
+       </div>
+    <img src="https://i.imgur.com/e8nLPYa.png" alt="1">
+      
+  </div>
+    <div class="columns">
+      <div class="column1">
+        
+      
+        <img src="https://i.imgur.com/RQEXMdM.png" alt="2">
+         <p>
+           부산역 바로 앞에 위치한 백조다방은 오래된 목조건물 2층에 있다.
+            ‘백조다방’ 간판과 ‘백조커피숍’ 간판이 함께 걸려 있다.
+          </p>
+        <img src="https://i.imgur.com/4CVHwJY.png" alt="3">
+         <p>
+           계단의 난간이 건물의 나이를 짐작게 한다. 난간 기둥은 나무를 깎아서 우아한 곡선 형태로 만들었다.
+           큰 것은 대동자, 작은 것은 소동자라고 불린다.
+           
+         </p>
+        
+      <div id="interview">
+        <h2 id="link3">사장님과의 인터뷰</h2>
+        <img src="https://i.imgur.com/UjALXwx.png" alt="3">
+       
+        
+        <p>   ⛾  “여행객들도 들어와요. 여기 역 앞이니까, 차표 끊어놓고 기다리려고. 외국 사람도 오고. 뜨내기손님들도 있고 단골도 몇 명 있고.
+          (다방들이) 다 잘 되지 않아요. 이제 죽어가니까.
+          이런 다방들이 죽어가지, 이제 안돼. 안돼서 없어지는 거거든.
+          전부 다 일반(음식점) 허가로 바꿔가지고 술집으로 바꿔버리니까."</p>
+        
+        <p>   ⛾  “저도 커피 한 잔 해주세요” </p>
+
+        <p>    “네?” </p>
+
+        <p>   ⛾ “저도 커피 한 잔 사주세요” </p>
+
+        <p>   “아, 네. 그래야죠.” </p>
+
+    
+
+
+      </div>
+      
+      
+     </div>
+      <div class="column2">
+        <div class="item1", id="link1">
+         <img src= https://i.imgur.com/9Km4Reo.png alt="4">
+        </div>
+     
+        
+      <p class="item2"> <img src=https://i.imgur.com/s8Id0L4.png alt=5>
+        
+         주방 상단의 내림벽을 갈색 띠로 장식해 다방 전체 인테리어와 일관성을 유지하여 주방을 시각적으로 구분 짓는다.
+        </p>
+         <p class="item3"> <img src=https://i.imgur.com/ziq62kY.png alt=6>
+         
+        창가 좌석과 텔레비전. 텔레비전은 심플하게 디자인된 고정 선반 위에 놓여있다.
+        모든 손님이 볼 수 있도록 최대한 높이 위치시켰다.
+        </p>
+        
+          <p class="item4">
+       목조건물 특유의 아늑한 공간감을 느낄 수 있는 백조다방에서 가장 눈에 띄는 특징은 공간을 구분하는 아치다. 
+       일렬로 서 있는 기둥의 상부를 아치 형태로 처리한 디자인이 고풍스러우면서도 특색 있다. 곳곳에 걸려 있는 전통 회화가 차분한 분위기를 조성한다.
+        계단 난간, 기둥, 창문, 띠 장식 등 모든 프레임과 장식 요소를 짙은 갈색으로 통일해 공간에 일관성을 부여했다.
+        짙은 갈색은 안정감을 주며 전체적인 디자인을 정돈한다.
+        창문으로 들어오는 햇살이 스터코로 마감된 벽의 질감을 도드라지게 하고 소파의 무늬와 색감을 생생하게 드러낸다.
+
+        스터코는 석고에 돌가루를 첨가해 섞은 마감 재료다. 원하는 색을 만들 수 있고 돌의 종류와 크기에 따라 다양한 질감을 표현할 수 있다.   
+
+         
+         
+        </p>
+        
+        <div class="item5"> <img src="https://i.imgur.com/qsw5BIl.png">
+        
+        </div>
+        
+        <div class="item6"> <img src= "https://i.imgur.com/XaLInEH.png"> 
+      
+        </div>
+        
+         <div class="item7"><img src= "https://i.imgur.com/RLmjoR7.png">
+        </div>
+         <div class="item8">
+         <p>
+           (위) 기둥과 아치 형태로 계산대와 공중전화 부스를 만들어 공간을 구분하면서도 개방감을 잃지 않는다.
+           나란히 늘어선 기둥 상부를 아치로 마감한 이 디자인은 고전 건축양식에서 따온 것으로 우아한 고전미를 느끼게 한다.
+          
+         </p>
+
+         <p>
+           (왼) 다방 전경. 옛날 목조건물의 아담한 공간에 창으로 자연광이 들어와 밝고 편안한 분위기다.
+           벽에는 커다란 호랑이 그림이 걸려 있다.
+           
+          </p>
+            (오) 단순해서 강렬한 둥근 디자인의 조명박스는 입체감 있게 돌출되었고 짙은 색 테두리로 강조되었다.
+           중앙에 설치된 조명은 빨강, 초록, 노랑의 원색으로 되어 있어 경쾌하고 힘있다. 
+          
+         <p>
+        </p>
+           
+        </div>
+          
+        </div>
+      
+     
+     </div>
+    </div>
+  </div>
+  
+  <div class="footer">
+    <div class="footer-left"><a href= "https://naver.me/FHVBMpOy" target="_blank"> 위치: 부산 동구 초량동 </a></div>
+    <div class="footer-left"> 전화: (051) 467-2901</div>
+  </footer>
+</body>
+</html>
